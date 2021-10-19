@@ -15,3 +15,5 @@ yarn-error.log
 /.vscode
 /mysql_data
 /mysql_sql
+supervisord.*
+.DS_Store
