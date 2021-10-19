@@ -25,12 +25,11 @@ class NewMessage implements ShouldBroadcast
      */
     public function __construct($message)
     {
-        //
         $this->message = $message;
     }
 
     public function broadcastOn()
     {
-        return new Channel('ssshome');
+        return new Channel('home');
     }
 }
