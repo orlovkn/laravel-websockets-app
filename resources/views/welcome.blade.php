@@ -132,7 +132,7 @@
 
         <script src="{{ asset('js/app.js')  }}"></script>
         <script>
-            Echo.channel(`home`)
+            Echo.channel(`chat.12`)
                 .listen('NewMessage', (e) => {
                     console.log(e);
                 });

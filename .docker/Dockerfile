@@ -1,7 +1,7 @@
 # P.S. keep in mind that this file is used for local deployment only,
 # production Dockerfile is in CI/CD repo http://git.innoscripta.com/devops/innos-microservices/cicd-main-fragenliste-api
 
-FROM php:8.0-alpine AS prebuild
+FROM php:7.4-alpine AS prebuild
 WORKDIR /app
 COPY . /app
 COPY ./.docker/supervisor.conf /etc/supervisor/supervisord.conf

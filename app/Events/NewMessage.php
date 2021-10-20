@@ -28,8 +28,8 @@ class NewMessage implements ShouldBroadcast
         $this->message = $message;
     }
 
-    public function broadcastOn()
+    public function broadcastOn(): Channel
     {
-        return new Channel('home');
+        return new Channel('chat.12');
     }
 }
